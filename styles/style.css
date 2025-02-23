@@ -221,6 +221,23 @@ template {
 
 
 /* Start Project */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "IYWRegular", sans-serif;
+}
+
+
+
 .header-fixed {
     position: fixed;
     background-color: rgb(237, 24, 68);
@@ -235,7 +252,16 @@ template {
 }
 
 .container {
-    padding-top: 3.5%;
+    max-width: 110rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+.navbar {
+    padding-top: 4.5em;
     display: flex;
     justify-content: space-between;
 }
