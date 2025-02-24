@@ -1,112 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/public.css">
+    <script src="https://kit.fontawesome.com/5f3bbbaa18.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="/styles/app.css">
+    <title>Digikala</title>
 </head>
+<body>
 
-<body style="direction: rtl;">
-    <header>
-        <div>sec1</div>
-        <div style="display: flex; justify-content: space-between; height: 56px; ">
-            <div class=" flex" style="gap: 10px;width: 50%; align-items: center;">
-                <div style="width:200px">pic</div>
-                <div style="flex-grow: 1;" class="yellow">search</div>
-            </div>
-            <div class=" flex" style="width: 50%; justify-content: end; align-items: center; gap: 10px;">
-                <div>ic1</div>
-                <div>ic2</div>
-                <div>ic3</div>
-            </div>
-        </div>
-        <div style="display: flex; justify-content: space-between; height: 56px; ">
-            <div class=" flex" style="gap: 10px;width: 50%; align-items: center;">
-                <div style="width:200px">m1</div>
-                <div style="width:200px">m1</div>
-                <div style="width:200px">m1</div>
-            </div>
-            <div class=" flex" style="width: 50%; justify-content: end; align-items: center; gap: 10px;">
-                <div>loc</div>
-            </div>
-        </div>
-    </header>
-    <div class="body">
-        <div style="height: 100px;gap:10px;justify-content: center;" class="red flex">
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-        </div>
-        <div class="slideshow yellow"></div>
-        <div style="height: 100px;gap:10px;justify-content: center;" class="red flex">
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-            <div class="story">
-                <div class="storyImage"></div>
-                <div class="storyText">text</div>
-            </div>
-        </div>
-        <div class="shegeftaneh">
-            <div>
-                
-            </div>
-            <div sheg-img></div>
-            <div sheg-text></div>
-            <div sheg-realPrice></div>
-            <div sheg-disPrice></div>
-        </div>
+
+    <div class="header-fixed"></div>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-up">
+                    <div class="nav-up__left">
+                        <div><i class="fa-regular fa-bell"></i></div>
+                        <div><i class="fa-regular fa-user"></i></div>
+                        <div><i class="fa-solid fa-minus"></i></div>
+                        <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="nav-up__right">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="   جستجو" />
+                            <i class="fa-brands fa-searchengin search-icon"></i>
+                        </div>
+                        <div class="nav-logo"><img src="images/full-horizontal.svg" alt="Logo" class="nav-logo__img"></div>
+                    </div>
+                </div>
+                <!-- <div class="nav-down">
+                    <div class="nav-down__right">
+                        <div class="menu">
+                            <div class="main-menu">
+                                <div class="hamburger-menu">
+                                    <a href="#">دسته بندی کالاها</a>
+                                </div>
+                            </div>
+                            <div class="section-menu">
+                                <div class="menu__item">
+                                    <a href="#">شگفت انگیزها</a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#">سوپرمارکت</a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#">طلای دیجیتال</a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#">پرفروش ترین ها</a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#">خرید کالاهای کارکرده</a>
+                                </div>
+                            </div>
+                            <div class="help-menu">
+                                <li class="menu__link">
+                                    <a href="#">سوالی دارید؟</a>
+                                </li>
+                                <li class="menu__link">
+                                    <a href="#">در دیجیکالا بفروشید!</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="address-link">
+                            <a href="#">ارسال به تهران</a>
+                        </div> -->
+                    </div>
+
+
+                </div>
+
+            </nav>
+            <div></div>
+            <!-- <div class="instal-flex">
+                <div class="click-to-install">نصب</div>
+            </div> -->
+        </header>
     </div>
-    <footer>footer</footer>
 
+
+    <script src="./scripts/app.js"></script>
 </body>
-
 </html>
