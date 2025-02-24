@@ -2,37 +2,66 @@
 
 @font-face {
     font-family: "IYWBlack";
-    src: url("../fonts/IRANYekanWebBlack.eot") format("openType");
+    src: url("../fonts/IRANYekanWebBlack.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebBlack.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebBlack.woff") format("woff"),
+         url("../fonts/IRANYekanWebBlack.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "IYWBold";
-    src: url("../fonts/IRANYekanWebBold.eot") format("openType");
+    src: url("../fonts/IRANYekanWebBold.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebBold.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebBold.woff") format("woff"),
+         url("../fonts/IRANYekanWebBold.ttf") format("truetype");
 }
+
 @font-face {
-    font-family: "IYWBlack";
-    src: url("../fonts/IRANYekanWebExtraBlack.eot") format("openType");
+    font-family: "IYWExtraBlack";
+    src: url("../fonts/IRANYekanWebExtraBlack.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebExtraBlack.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebExtraBlack.woff") format("woff"),
+         url("../fonts/IRANYekanWebExtraBlack.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "IYWExtraBold";
-    src: url("../fonts/IRANYekanWebExtraBold.eot") format("truetype");
+    src: url("../fonts/IRANYekanWebExtraBold.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebExtraBold.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebExtraBold.woff") format("woff"),
+         url("../fonts/IRANYekanWebExtraBold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "IYWLight";
-    src: url("../fonts/IRANYekanWebLight.eot") format("openType");
+    src: url("../fonts/IRANYekanWebLight.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebLight.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebLight.woff") format("woff"),
+         url("../fonts/IRANYekanWebLight.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "IYWMedium";
-    src: url("../fonts/IRANYekanWebMedium.eot") format("openType");
+    src: url("../fonts/IRANYekanWebMedium.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebMedium.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebMedium.woff") format("woff"),
+         url("../fonts/IRANYekanWebMedium.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "IYWRegular";
-    src: url("../fonts/IRANYekanWebRegular.eot") format("openType");
+    src: url("../fonts/IRANYekanWebRegular.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebRegular.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebRegular.woff") format("woff"),
+         url("../fonts/IRANYekanWebRegular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "IYWThin";
-    src: url("../fonts/IRANYekanWebThin.eot") format("truetype");
+    src: url("../fonts/IRANYekanWebThin.eot") format("embedded-opentype"),
+         url("../fonts/IRANYekanWebThin.woff2") format("woff2"),
+         url("../fonts/IRANYekanWebThin.woff") format("woff"),
+         url("../fonts/IRANYekanWebThin.ttf") format("truetype");
 }
 
 
@@ -46,6 +75,7 @@ html {
 
 body {
     margin: 0;
+    font-family: "IYWRegular", sans-serif;
 }
 
 main {
@@ -61,6 +91,7 @@ hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+    font-family: "IYWBold", sans-serif;
 }
 
 pre {
@@ -222,109 +253,41 @@ template {
 
 /* Start Project */
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: "IYWRegular", sans-serif;
-}
-
-
-
-.header-fixed {
-    position: fixed;
-    background-color: rgb(237, 24, 68);
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-    width: 100%;
-    height: 2.5em;
-    margin: 0px;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.container {
-    max-width: 110rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-
-.nav {
-    padding-top: 4.5em;
+.flex{
     display: flex;
+}
+
+.red{ 
+    background: red;
+}
+.yellow{ 
+    background: yellow;
+}
+
+
+
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
-.logo {
+.storyImage{
+    height: 74px;
+    width:  74px;
+    background: brown;
+    border-radius: 100%;
+}
+
+.body {
     display: flex;
-    box-sizing: border-box;
-    width: 1.25em;
-    height: 1.25em;
+    flex-direction: column;
 }
 
-.exit-flex {
-    display: flex;
-    justify-content: center;
-    
-    box-sizing: border-box;
-    width: 1.75em;
-    height: 1.75em;
-    padding: 0.5em 0.5em;
-}
-
-.logo-flex {
-    display: flex;
-    box-sizing: border-box;
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.instal-flex {
-    display: flex;
-    box-sizing: border-box;
-    width: 1.25em;
-    height: 1.25em;
-}
-
-
-
-
-
-
-
-/* Project Responsive */
-
-@media only screen and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
+.slideshow {
+    width: 100%;
+    padding: auto;
+    height: 400px;
+    margin: 20px 0;
 }
