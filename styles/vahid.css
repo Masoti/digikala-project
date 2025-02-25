@@ -320,7 +320,61 @@ template {
     padding: auto 16px;
 }
 
-.advertis-item {
+.advertis {
+    width: 80%;
     height: 241.5px;
-    width: 322px;
+    margin: 20px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+}
+
+.advertis-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+    width: 360px;
+    height: 241.5px;
+    /* justify-content: ; */
+} 
+
+.footer {
+    padding-top: 16px;
+    margin: 32px;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 30%;
+    gap: 10px;
+    height: 26.03px;
+    margin-bottom: 30px;
+}
+
+.tel1   {
+    width: 152.13px;
+    display: flex;
+    justify-content: center;
+}
+
+.tel2 {
+    width: 61.02px;
+    display: flex;
+    justify-content: center;
+}
+
+.text1  {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1
 }
